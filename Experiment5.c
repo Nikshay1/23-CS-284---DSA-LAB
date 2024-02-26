@@ -20,13 +20,13 @@ int main() {
     switch (choice) {
         case 1:
             if (size >= MAX_SIZE) {
-                printf("Array is full, cannot perform insertion.\n");
+                printf("Overflow: Array is full, cannot perform insertion.\n");
             } else {
                 int element;
                 printf("Enter the element to insert: ");
                 scanf("%d", &element);
 
-                arr[size] = element;
+                arr[size] = element; 
                 size++;
 
                 printf("Element inserted at the end successfully.\n");
@@ -34,7 +34,7 @@ int main() {
             break;
         case 2:
             if (size == 0) {
-                printf("Array is empty, cannot perform deletion.\n");
+                printf("Underflow: Array is empty, cannot perform deletion.\n");
             } else {
                 size--; 
 
